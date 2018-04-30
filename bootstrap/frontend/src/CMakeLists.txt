@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 2.6)
 
-project(compiler)
+project(frontend)
 
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(
-	compiler
+	frontend
 		main.cpp
 		Token.cpp
 		Token.h
@@ -13,4 +13,7 @@ add_executable(
 		Error.h
 		TokenStream.cpp
 		TokenStream.h
+		Parser.cpp
+		Parser.h
+		Ast.h
 )
